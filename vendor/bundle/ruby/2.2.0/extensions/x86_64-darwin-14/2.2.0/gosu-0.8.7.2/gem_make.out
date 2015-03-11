@@ -1,0 +1,164 @@
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20150311-15736-19tc09p.rb extconf.rb 
+The Gosu gem requires some libraries to be installed system-wide.
+See the following site for a list:
+https://github.com/jlnr/gosu/wiki/Getting-Started-on-OS-X
+
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling gosu_wrap.cxx
+gosu_wrap.cxx:5261:35: warning: 'drawRot' is deprecated [-Wdeprecated-declarations]
+      ((Gosu::Font const *)arg1)->drawRot((std::wstring const &)*arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+                                  ^
+../../Gosu/Font.hpp:77:14: note: 'drawRot' has been explicitly marked deprecated here
+        void drawRot(const std::wstring& text, double x, double y, ZPos z, double angle,
+             ^
+1 warning generated.
+compiling Audio-AudioOpenAL.cpp
+In file included from Audio-AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/AudioOpenAL.mm:1:
+In file included from ./../../src/Audio/AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/ALChannelManagement.hpp:5:
+./../../src/Audio/../MacUtility.hpp:36:16: warning: 'GetMacOSStatusErrorString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << GetMacOSStatusErrorString(status)
+               ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:807:1: note: 'GetMacOSStatusErrorString' has been explicitly marked deprecated here
+GetMacOSStatusErrorString(OSStatus err)                       __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from Audio-AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/AudioOpenAL.mm:1:
+In file included from ./../../src/Audio/AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/ALChannelManagement.hpp:5:
+./../../src/Audio/../MacUtility.hpp:37:24: warning: 'GetMacOSStatusCommentString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << " (" << GetMacOSStatusCommentString(status) << ")";
+                       ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:848:1: note: 'GetMacOSStatusCommentString' has been explicitly marked deprecated here
+GetMacOSStatusCommentString(OSStatus err)                     __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from Audio-AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/AudioOpenAL.mm:1:
+In file included from ./../../src/Audio/AudioOpenAL.cpp:21:
+./../../src/Audio/AudioToolboxFile.hpp:151:13: warning: 'CFURLGetFSRef' is deprecated: first deprecated in OS X 10.9 [-Wdeprecated-declarations]
+            CFURLGetFSRef(reinterpret_cast<CFURLRef>(url.get()), &fsRef);
+            ^
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h:475:9: note: 'CFURLGetFSRef' has been explicitly marked deprecated here
+Boolean CFURLGetFSRef(CFURLRef url, struct FSRef *fsRef) CF_DEPRECATED(10_0, 10_9, 2_0, 7_0);
+        ^
+In file included from Audio-AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/AudioOpenAL.mm:1:
+In file included from ./../../src/Audio/AudioOpenAL.cpp:21:
+./../../src/Audio/AudioToolboxFile.hpp:154:26: warning: 'ExtAudioFileOpen' is deprecated: first deprecated in OS X 10.6 [-Wdeprecated-declarations]
+                CHECK_OS(ExtAudioFileOpen(&fsRef, &file_));
+                         ^
+./../../src/Audio/../MacUtility.hpp:42:36: note: expanded from macro 'CHECK_OS'
+    #define CHECK_OS(status) if (!(status)) {} else Gosu::throwOSError(status, __LINE__)
+                                   ^
+/System/Library/Frameworks/AudioToolbox.framework/Headers/ExtendedAudioFile.h:317:1: note: 'ExtAudioFileOpen' has been explicitly marked deprecated here
+ExtAudioFileOpen(                       const struct FSRef *            inFSRef,
+^
+In file included from Audio-AudioOpenAL.cpp:1:
+In file included from ./../../src/Audio/AudioOpenAL.mm:1:
+In file included from ./../../src/Audio/AudioOpenAL.cpp:21:
+./../../src/Audio/AudioToolboxFile.hpp:154:26: warning: 'ExtAudioFileOpen' is deprecated: first deprecated in OS X 10.6 [-Wdeprecated-declarations]
+                CHECK_OS(ExtAudioFileOpen(&fsRef, &file_));
+                         ^
+./../../src/Audio/../MacUtility.hpp:42:72: note: expanded from macro 'CHECK_OS'
+    #define CHECK_OS(status) if (!(status)) {} else Gosu::throwOSError(status, __LINE__)
+                                                                       ^
+/System/Library/Frameworks/AudioToolbox.framework/Headers/ExtendedAudioFile.h:317:1: note: 'ExtAudioFileOpen' has been explicitly marked deprecated here
+ExtAudioFileOpen(                       const struct FSRef *            inFSRef,
+^
+5 warnings generated.
+compiling Bitmap-Bitmap.cpp
+compiling Bitmap-BitmapApple.cpp
+In file included from Bitmap-BitmapApple.cpp:1:
+In file included from ./../../src/Bitmap/BitmapApple.mm:7:
+./../../src/Bitmap/../MacUtility.hpp:36:16: warning: 'GetMacOSStatusErrorString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << GetMacOSStatusErrorString(status)
+               ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:807:1: note: 'GetMacOSStatusErrorString' has been explicitly marked deprecated here
+GetMacOSStatusErrorString(OSStatus err)                       __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from Bitmap-BitmapApple.cpp:1:
+In file included from ./../../src/Bitmap/BitmapApple.mm:7:
+./../../src/Bitmap/../MacUtility.hpp:37:24: warning: 'GetMacOSStatusCommentString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << " (" << GetMacOSStatusCommentString(status) << ")";
+                       ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:848:1: note: 'GetMacOSStatusCommentString' has been explicitly marked deprecated here
+GetMacOSStatusCommentString(OSStatus err)                     __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from Bitmap-BitmapApple.cpp:1:
+./../../src/Bitmap/BitmapApple.mm:67:28: warning: 'bestRepresentationForDevice:' is deprecated: first deprecated in OS X 10.6 [-Wdeprecated-declarations]
+        id anyRep = [image bestRepresentationForDevice:nil];
+                           ^
+/System/Library/Frameworks/AppKit.framework/Headers/NSImage.h:127:1: note: 'bestRepresentationForDevice:' has been explicitly marked deprecated here
+- (NSImageRep *)bestRepresentationForDevice:(NSDictionary *)deviceDescription NS_DEPRECATED_MAC(10_0, 10_6);
+^
+3 warnings generated.
+compiling Bitmap-BitmapColorKey.cpp
+compiling Bitmap-BitmapUtils.cpp
+compiling DirectoriesUnix.cpp
+compiling FileUnix.cpp
+compiling Graphics-BlockAllocator.cpp
+compiling Graphics-Color.cpp
+compiling Graphics-Graphics.cpp
+compiling Graphics-Image.cpp
+compiling Graphics-LargeImageData.cpp
+compiling Graphics-Resolution.cpp
+compiling Graphics-ResolutionApple.cpp
+compiling Graphics-TexChunk.cpp
+compiling Graphics-Texture.cpp
+compiling Graphics-Transform.cpp
+compiling Input-Input.cpp
+compiling Input-TextInput.cpp
+compiling Inspection.cpp
+compiling IO.cpp
+compiling Math.cpp
+compiling Text-Font.cpp
+compiling Text-Text.cpp
+compiling Text-TextApple.cpp
+In file included from Text-TextApple.cpp:1:
+In file included from ./../../src/Text/TextApple.mm:9:
+./../../src/Text/../MacUtility.hpp:36:16: warning: 'GetMacOSStatusErrorString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << GetMacOSStatusErrorString(status)
+               ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:807:1: note: 'GetMacOSStatusErrorString' has been explicitly marked deprecated here
+GetMacOSStatusErrorString(OSStatus err)                       __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from Text-TextApple.cpp:1:
+In file included from ./../../src/Text/TextApple.mm:9:
+./../../src/Text/../MacUtility.hpp:37:24: warning: 'GetMacOSStatusCommentString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << " (" << GetMacOSStatusCommentString(status) << ")";
+                       ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:848:1: note: 'GetMacOSStatusCommentString' has been explicitly marked deprecated here
+GetMacOSStatusCommentString(OSStatus err)                     __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+2 warnings generated.
+compiling Text-TextMac.cpp
+compiling TimingApple.cpp
+compiling Utility.cpp
+compiling UtilityApple.cpp
+In file included from UtilityApple.cpp:1:
+In file included from ./../../src/UtilityApple.mm:3:
+../../src/MacUtility.hpp:36:16: warning: 'GetMacOSStatusErrorString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << GetMacOSStatusErrorString(status)
+               ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:807:1: note: 'GetMacOSStatusErrorString' has been explicitly marked deprecated here
+GetMacOSStatusErrorString(OSStatus err)                       __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+In file included from UtilityApple.cpp:1:
+In file included from ./../../src/UtilityApple.mm:3:
+../../src/MacUtility.hpp:37:24: warning: 'GetMacOSStatusCommentString' is deprecated: first deprecated in OS X 10.8 [-Wdeprecated-declarations]
+            << " (" << GetMacOSStatusCommentString(status) << ")";
+                       ^
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:848:1: note: 'GetMacOSStatusCommentString' has been explicitly marked deprecated here
+GetMacOSStatusCommentString(OSStatus err)                     __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_8, __IPHONE_NA, __IPHONE_NA);
+^
+2 warnings generated.
+compiling Window.cpp
+linking shared-object gosu.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 gosu.bundle ./.gem.20150311-15736-u3ziso

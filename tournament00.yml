@@ -1,0 +1,171 @@
+---
+- winner_is:
+  - Killa
+  winner_energy:
+  - 28.0
+  elapsed_ticks: 2201
+  seed: 1426128291
+  robots:
+    Psycho:
+      damage_given: 72.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 72.0
+      kills: 1
+  match: 0
+  round: 1
+- winner_is:
+  - Psycho
+  winner_energy:
+  - 1.0
+  elapsed_ticks: 2073
+  seed: 1426128292
+  robots:
+    Psycho:
+      damage_given: 102.0
+      damage_taken: 99.0
+      kills: 1
+    Killa:
+      damage_given: 99.0
+      damage_taken: 102.0
+      kills: 0
+  match: 1
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 1.0
+  elapsed_ticks: 2222
+  seed: 1426128294
+  robots:
+    Psycho:
+      damage_given: 99.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 99.0
+      kills: 1
+  match: 2
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 43.0
+  elapsed_ticks: 2108
+  seed: 1426128295
+  robots:
+    Psycho:
+      damage_given: 57.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 57.0
+      kills: 1
+  match: 3
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 79.0
+  elapsed_ticks: 1915
+  seed: 1426128297
+  robots:
+    Psycho:
+      damage_given: 21.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 21.0
+      kills: 1
+  match: 4
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 91.0
+  elapsed_ticks: 2190
+  seed: 1426128298
+  robots:
+    Psycho:
+      damage_given: 9.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 9.0
+      kills: 1
+  match: 5
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 4.0
+  elapsed_ticks: 2181
+  seed: 1426128300
+  robots:
+    Psycho:
+      damage_given: 96.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 96.0
+      kills: 1
+  match: 6
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 79.0
+  elapsed_ticks: 2076
+  seed: 1426128301
+  robots:
+    Psycho:
+      damage_given: 21.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 21.0
+      kills: 1
+  match: 7
+  round: 1
+- winner_is:
+  - Psycho
+  winner_energy:
+  - 10.0
+  elapsed_ticks: 1899
+  seed: 1426128303
+  robots:
+    Psycho:
+      damage_given: 102.0
+      damage_taken: 90.0
+      kills: 1
+    Killa:
+      damage_given: 90.0
+      damage_taken: 102.0
+      kills: 0
+  match: 8
+  round: 1
+- winner_is:
+  - Killa
+  winner_energy:
+  - 25.0
+  elapsed_ticks: 2163
+  seed: 1426128304
+  robots:
+    Psycho:
+      damage_given: 75.0
+      damage_taken: 108.0
+      kills: 0
+    Killa:
+      damage_given: 108.0
+      damage_taken: 75.0
+      kills: 1
+  match: 9
+  round: 1
